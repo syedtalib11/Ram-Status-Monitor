@@ -1,5 +1,5 @@
 #!/bin/bash
-#Disk Usage Alert
+#Ram-Status-Monitor
 #Author - Syed Talib
 
 Total=$(free -mt | grep "Total" | awk '{print $4}')
@@ -10,3 +10,4 @@ then
 else
      echo "your space is sufficent: $Total:M"
 fi
+
